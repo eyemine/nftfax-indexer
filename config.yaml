@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: nftfax-indexer
+disable_default_cross_chain: true
+chains:
+- id: 8453
+  start_block: 50375000
+  contracts:
+  - name: NFTFaxCollectibleV2
+    address:
+    - "0xcC121BF9E3a13d03EACd55E15495e3E8De61fac5"
+    events:
+    - event: FaxMinted(uint256 indexed mintedTokenId, address indexed to, uint8 community, uint256 sourceTokenId, string trayId)

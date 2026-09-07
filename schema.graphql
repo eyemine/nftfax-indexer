@@ -1,0 +1,12 @@
+type NFTFaxCollectibleV2_FaxMinted {
+  id: ID!
+  mintedTokenId: BigInt!
+  to: String!
+  community: BigInt!
+  sourceTokenId: BigInt!
+  trayId: String!
+  blockNumber: Int!
+  blockTimestamp: Int!
+  transactionHash: String!
+}
+
