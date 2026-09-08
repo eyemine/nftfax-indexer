@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
 name: nftfax-indexer
 disable_default_cross_chain: true
+field_selection:
+  transaction_fields: [hash]
 chains:
 - id: 8453
   start_block: 50375000
